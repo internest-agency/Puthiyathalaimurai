@@ -145,13 +145,13 @@ body .container {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #000 url("../img/loader.svg") no-repeat center center;
+  background: #000 url("/img/tamilan-award-preloader.png") no-repeat center center;
 }
 
 [data-background] {
-  background-size: cover;
+  background-size: 200px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
 }
 
 a {
@@ -1919,14 +1919,14 @@ select:visited {
 .ori-sponsor-section-1 {
   z-index: 1;
   overflow: hidden;
-  padding: 125px 0px 0px;
+  margin-bottom: 50px;
 }
 .ori-sponsor-section-1 .line_animation .line_area:before {
   display: none;
 }
 
 .ori-sponsor-title {
-  padding-bottom: 60px;
+  padding-bottom: 32px;
 }
 .ori-sponsor-title h3 {
   display: -webkit-box;
@@ -6558,7 +6558,7 @@ select:visited {
   color: var(--base-color-1);
 }
 .ori-event-content{
-  margin-bottom: 40px;
+  margin-bottom: 72px;
 }
 .ori-about-circle-progress-section {
   overflow: hidden;
@@ -7088,6 +7088,8 @@ select:visited {
 
 .ori-vission-section {
   overflow: hidden;
+  padding: 80px 0;
+  b
 }
 .ori-vission-section .ori-service-why-choose-text {
   padding-left: 0;
