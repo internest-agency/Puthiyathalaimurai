@@ -7459,7 +7459,7 @@ h2.ori-event-title{
 /*----------------------------------------------------*/
 .ori-portfolio-feed-section {
   overflow: hidden;
-  padding: 80px 0px;
+  padding-top: 80px;
 }
 .ori-portfolio-feed-section .ori-portfolio-more-btn {
   margin-top: 30px;
@@ -7842,6 +7842,9 @@ h2.ori-event-title{
   overflow: hidden;
   position: relative;
   border-radius: 5px;
+}
+.gallery-item img{
+  border-radius: 1rem;
 }
 .ori-blog-widget .gallery-widget li a:before {
   top: 0;
@@ -10535,7 +10538,6 @@ Font load
 /*Footer area*/
 /*----------------------------------------------------*/
 .ori-footer-section {
-  padding-top: 100px;
   background-color: #171717;
 }
 .ori-footer-section.footer-style-two {
@@ -10692,6 +10694,9 @@ Font load
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgb(0, 238, 235)), color-stop(53%, rgb(32, 166, 243)), to(rgb(63, 93, 251)));
   background: linear-gradient(-180deg, rgb(0, 238, 235) 1%, rgb(32, 166, 243) 53%, rgb(63, 93, 251) 100%);
 }
+.ori-footer-widget .logo-widget img{
+  height: 64px;
+}
 .ori-footer-section.footer-style-seven .ori-footer-newslatter p {
   color: #fff;
   margin-top: 20px;
@@ -10738,7 +10743,7 @@ Font load
 }
 
 .ori-footer-widget-wrapper {
-  padding: 110px 0px 70px;
+  padding: 80px 0px;
 }
 
 .ori-footer-widget .widget-title {
