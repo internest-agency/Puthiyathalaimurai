@@ -640,7 +640,6 @@ select:visited {
           animation-fill-mode: both;
   -webkit-animation-name: slideInDown;
           animation-name: slideInDown;
-  background-color: #811517;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-transition: 0.3s all ease-in-out;
@@ -1536,9 +1535,15 @@ select:visited {
 /*Global area For Digital Studio*/
 /*----------------------------------------------------*/
 .ori-digital-studio,
-.ori-inner-page {
+.ori-inner-page, .ori-header-section.sticky-on {
   color: #fff;
-  background: linear-gradient(133deg, #811517 0%, #480000 100%);
+  background: linear-gradient(90deg, #8B1B1D 0%, #380000 100%);
+}
+.ori-slider-img{
+  margin-bottom: 1.5rem;
+}
+.ori-slider-img img{
+  border-radius: 1.5rem;
 }
 .ori-digital-studio h1,
 .ori-digital-studio h2,
@@ -12020,6 +12025,12 @@ Font load
   }
 }
 @media screen and (max-width: 680px) {
+  body{
+    font-size: 0.8rem;
+  }
+  .ori-header-section.sticky-on {
+    padding: 8px 16px;
+  }
   .ori-header-login-signup .ori-sign-btn button {
     display: none;
   }
@@ -12029,6 +12040,49 @@ Font load
   }
   .ori-header-login-signup .ori-login-btn button i {
     display: block;
+  }
+ .ori-slider-content-1{
+    padding: 80px 0 80px;
+  }
+  .ori-vission-section, .ori-about-circle-progress-section, .ori-sponsor-section-1, .ori-portfolio-feed-section {
+    padding: 40px 0 !important;
+  }
+
+  .ori-slider-content-2.slick-current.slick-active .ori-slider-text h2{
+    margin-top: 3.5rem;
+    font-size: 1rem;
+  }
+
+  .ori-service-why-choose-text .ori-service-why-choose-list-item{
+    padding-top: 28px;
+  }
+  .ori-event-content, .ori-gallery{
+    margin-bottom: 28px !important;
+  }
+  .ori-footer-section{
+    padding-top: 40px !important;
+  }
+  .ori-sponsor-title{
+    margin-bottom: 20px;
+  }
+  .ori-slider-text h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .ori-footer-section .ori-footer-title h2{
+    font-size: 2rem;
+  }
+  .ori-slider-text .slider-play-btn {
+    margin-top: 40px;
+  }
+
+  .ori-slider-text .slider-play-btn a {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ori-slider-content-1 {
+    padding: 170px 0px 150px;
   }
 
   .ori-project-item-4 {
@@ -12191,23 +12245,6 @@ Font load
   }
 }
 @media screen and (max-width: 480px) {
-  .ori-slider-text h1 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-
-  .ori-slider-text .slider-play-btn {
-    margin-top: 40px;
-  }
-
-  .ori-slider-text .slider-play-btn a {
-    width: 80px;
-    height: 80px;
-  }
-
-  .ori-slider-content-1 {
-    padding: 170px 0px 150px;
-  }
 
   .ori-slider-wrap-1 .slick-dots li.slick-active {
     background-color: rgba(255, 255, 255, 0.7);
@@ -12312,10 +12349,6 @@ Font load
 
   .ori-footer-title h2 {
     font-size: 30px;
-  }
-
-  .ori-footer-section {
-    padding-top: 80px !important;
   }
 
   .ori-footer-widget-wrapper {
