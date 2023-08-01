@@ -17,8 +17,6 @@ Last change:    00/00/00
 
 		Basic: {
 			init: function() {
-
-				this.preloader();
 				this.BackgroundImage();
 				this.Animation();
 				this.StickyHeader();
@@ -52,11 +50,6 @@ Last change:    00/00/00
 				this.AgencyProjectSlider();
 				
 				
-			},
-			preloader: function (){
-				jQuery(window).on('load', function(){
-					jQuery('#preloader').fadeOut('slow',function(){jQuery(this).remove();});
-				})
 			},
 			BackgroundImage: function (){
 				$('[data-background]').each(function() {

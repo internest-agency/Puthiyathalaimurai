@@ -1,3 +1,8 @@
+const preloader = document.getElementById("preloader");
+document.body.onload = () => {
+  preloader.style.display = "none";
+}
+
 const days = document.querySelector('.day .timer span');
 const hours = document.querySelector('.hour .timer span');
 const mins = document.querySelector('.min .timer span');
@@ -19,3 +24,4 @@ secs.innerText = secondsRemains;
 
 
 }, 1000);
+
