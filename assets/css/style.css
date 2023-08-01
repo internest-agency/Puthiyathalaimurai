@@ -170,7 +170,9 @@ body .container {
   justify-content: space-between;
   align-items: center;
 }
-
+.ori-sponsor-content img{
+  height: 87px;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -1962,7 +1964,7 @@ select:visited {
 }
 
 .ori-sponsor-title {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   padding-bottom: 8px;
   border-bottom: 1px solid white;
   display: inline-block;
@@ -11903,6 +11905,10 @@ Font load
 
   .ori-agency-portfolio-item .ori-agency-portfolio-title p {
     padding-bottom: 15px;
+  }
+
+  .ori-sponsor-content img{
+    height: 65px;
   }
 
   .ori-blog-item-2 {
