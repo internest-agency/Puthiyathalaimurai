@@ -175,6 +175,9 @@ body .container {
 .ori-sponsor-content img{
   height: 87px;
 }
+.about-pt p{
+  text-align: center;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -351,10 +354,20 @@ select:visited {
     opacity: 1;
   }
 }
+.slick-dots{
+  display: none;
+}
+.event-location{
+  display: inline-block;
+  padding: 16px;
+  border: 1px solid #FFFFFF66;
+  text-align: center;
+  border-radius: 8px;
+}
 .line_animation {
   top: 0px;
   left: 50%;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   bottom: 0px;
   display: block;
@@ -367,7 +380,7 @@ select:visited {
   height: 100%;
   position: relative;
   display: inline-block;
-  border-right: 1px solid #FFFFFF05;
+  border-right: 1px solid #FFFFFF12;
 }
 .line_animation .line_area:before {
   width: 1px;
@@ -1545,6 +1558,8 @@ select:visited {
 }
 section.ori-slider-section-1{
   background: radial-gradient(69.77% 80.23% at 49.95% 49.93%, #951719 0%, #330B0A 100%);
+  position: relative;
+  z-index: -2;
 }
 .ori-header-section.sticky-on{
   background-color: #951719;
@@ -1680,7 +1695,7 @@ section.ori-slider-section-1{
 .ori-slider-section-1 .ori-slider-social {
   top: 50%;
   left: 100px;
-  z-index: 1;
+  z-index: 2;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -1754,16 +1769,21 @@ section.ori-slider-section-1{
   padding: 140px 0 140px;
 }
 .ori-slider-content-1 .ori-slider-img {
+  position: relative;
   left: 0;
   right: 0;
   bottom: 0;
   opacity: 0;
-  z-index: -2;
+  z-index: 2;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
 }
 .ori-slider-content-1 .ori-slider-img img {
   display: inline-block;
+}
+.ori-slider-text{
+  position: relative;
+  z-index: 2;
 }
 .ori-slider-content-1:before {
   left: 0;
@@ -12058,7 +12078,11 @@ Font load
   .ori-header-login-signup .ori-sign-btn button {
     display: none;
   }
-
+  .event-location{
+    padding: 4px;
+    margin-top: 16px;
+    font-size: 0.6rem;
+  }
   .ori-header-login-signup .ori-login-btn button span {
     display: none;
   }
