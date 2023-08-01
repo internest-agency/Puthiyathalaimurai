@@ -1539,16 +1539,21 @@ select:visited {
 /*Global area For Digital Studio*/
 /*----------------------------------------------------*/
 .ori-digital-studio,
-.ori-inner-page, .ori-header-section.sticky-on {
+.ori-inner-page {
   color: #fff;
-  background: linear-gradient(90deg, #8B1B1D 0%, #380000 100%);
+  background: radial-gradient(69.77% 80.23% at 49.95% 49.93%, #951719 0%, #330B0A 100%);
+}
+section.ori-slider-section-1{
+  background: radial-gradient(69.77% 80.23% at 49.95% 49.93%, #951719 0%, #330B0A 100%);
+}
+.ori-header-section.sticky-on{
+  background-color: #951719;
 }
 .ori-slider-img{
   margin-bottom: 1.5rem;
 }
 .ori-slider-img img{
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .ori-digital-studio h1,
@@ -1964,7 +1969,7 @@ select:visited {
 }
 
 .background-transperancy{
-  background-color: #ffffff0A;
+  background-color: #ffffff0A !important;
 }
 
 .ori-sponsor-title {
@@ -11856,6 +11861,9 @@ Font load
   }
 }
 @media screen and (max-width: 850px) {
+  h2.ori-event-title{
+    font-size: 28px;
+  }
   .ori-testimonial-content-1 .carousel_nav {
     display: -webkit-box;
     display: -ms-flexbox;
