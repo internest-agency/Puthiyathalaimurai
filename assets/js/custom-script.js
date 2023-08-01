@@ -9,13 +9,13 @@ const mins = document.querySelector('.min .timer span');
 const secs = document.querySelector('.sec .timer span');
 
 setInterval(()=> {
-  const eventDate = new Date("08/11/2023 18:00:00");
-const currentDate = Date.now();
-const secRemains = Math.round((eventDate - currentDate)/1000);
-const secondsRemains = Math.round(secRemains%60);
-const minRemains = Math.round((secRemains%(3600))/60);
-const hoursRemains = Math.round((secRemains%(3600*24))/3600);
-const daysRemains = Math.round(secRemains/(3600*24));
+  const eventDate = new Date("2023-08-11T18:00:00");
+const currentDate = new Date();
+const differenceInMilliseconds = eventDate.getTime() - currentDate.getTime();
+const secondsRemains = Math.floor((differenceInMilliseconds % (1000 * 60)) / 1000);
+const minRemains = Math.floor((differenceInMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
+const hoursRemains = Math.floor((differenceInMilliseconds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const daysRemains = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24));
 
 days.innerText = daysRemains;
 hours.innerText = hoursRemains;
