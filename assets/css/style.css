@@ -144,7 +144,9 @@ body .container {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 10px solid #FF7425;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #FACA43;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,10 +158,17 @@ body .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 .timer span{
   font-size: 3rem;
+}
+.brand-logo img{
+  height: 72px;
+}
+.ori-header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #preloader {
   position: fixed;
@@ -272,7 +281,7 @@ select:visited {
   position: fixed;
   border-radius: 100%;
   line-height: 55px;
-  background-color: var(--base-color-1);
+  background-color: #FACA43;
 }
 .scrollup i {
   color: #fff;
@@ -647,7 +656,7 @@ select:visited {
           animation-fill-mode: both;
   -webkit-animation-name: slideInDown;
           animation-name: slideInDown;
-  background-color: #1E0905;
+  background-color: #811517;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-transition: 0.3s all ease-in-out;
@@ -1120,6 +1129,19 @@ select:visited {
   color: #ffffff;
 }
 
+.ori-footer-section{
+  padding-top: 80px;
+}
+
+.ori-footer-section .ori-footer-title{
+  margin-bottom: 32px;
+}
+.about-pt{
+  margin-bottom: 56px;
+}
+.ori-footer-section .ori-footer-title h2{
+  font-size: 3rem;
+}
 /*// off canvas style*/
 /*----------------------------------------------------*/
 .sidebar-info-contents {
@@ -1368,7 +1390,7 @@ select:visited {
   position: fixed;
   width: 310px;
   overflow-y: scroll;
-  background-color: #000;
+  background-color: #480000;
   padding: 20px 35px 35px 35px;
   -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
           box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
@@ -1532,7 +1554,7 @@ select:visited {
 .ori-digital-studio,
 .ori-inner-page {
   color: #fff;
-  background-color: #2B0707;
+  background: linear-gradient(133deg, #811517 0%, #480000 100%);
 }
 .ori-digital-studio h1,
 .ori-digital-studio h2,
@@ -1725,11 +1747,11 @@ select:visited {
 
 .ori-slider-content-1 {
   z-index: 1;
-  padding: 235px 0px 340px;
+  padding: 140px 0px 80px;
 }
 .ori-slider-content-2{
   z-index: 1;
-  padding: 340px 0 340px;
+  padding: 140px 0 140px;
 }
 .ori-slider-content-1 .ori-slider-img {
   left: 0;
@@ -1753,8 +1775,6 @@ select:visited {
   height: 530px;
   margin: 0 auto;
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(79.32%, rgba(9, 9, 9, 0)), color-stop(99.06%, #2B0707));
-  background: linear-gradient(180deg, rgba(9, 9, 9, 0) 79.32%, #2B0707 99.06%);
 }
 .ori-slider-content-1.slick-current.slick-active .ori-slider-img {
   opacity: 1;
@@ -2162,16 +2182,16 @@ select:visited {
   z-index: 1;
   overflow: hidden;
   padding: 65px 0px;
-  border-top: 1px solid #1C1C1C;
-  border-bottom: 1px solid #1C1C1C;
+  border-top: 1px solid #ffffff0f;
+  border-bottom: 1px solid #ffffff0f;
 }
 
 .ori-text-scroll-section-2 {
   z-index: 1;
   overflow: hidden;
   padding: 65px 0px;
-  border-top: 1px solid #1C1C1C;
-  border-bottom: 1px solid #1C1C1C;
+  border-top: 1px solid #ffffff0f;
+  border-bottom: 1px solid #ffffff0f;
 }
 
 .ori-team-content-1 {
@@ -3488,6 +3508,7 @@ select:visited {
   font-weight: 700;
   padding-bottom: 50px;
 }
+
 .ori-banner-sponsor-content-4 .ori-sponsor-item .ori-sponsor-img {
   height: 50px;
   display: -webkit-box;
@@ -6598,7 +6619,7 @@ select:visited {
 }
 
 .ori-about-circle-progress-section{
-  padding: 160px 0 80px 0;
+  padding: 80px 0 80px 0;
 }
 h2.ori-event-title{
   font-size: 50px;
@@ -7482,7 +7503,7 @@ h2.ori-event-title{
 /*----------------------------------------------------*/
 .ori-portfolio-feed-section {
   overflow: hidden;
-  padding-top: 80px;
+  padding: 80px 0;
 }
 .ori-portfolio-feed-section .ori-portfolio-more-btn {
   margin-top: 30px;
@@ -10513,6 +10534,41 @@ Font load
   }
 }
 @media screen and (max-width: 480px) {
+  .brand-logo img{
+    height: 56px;
+  }
+  .brand-logo{
+    position: static !important;
+    margin: 0 !important;
+    transform: translateY(0) !important;
+  }
+  .mobile_menu_button{
+    position: static !important;
+  }
+  .circle{
+    width: 60px;
+    height: 60px;
+    border-width: 4px;
+  }
+  .circle .timer span{
+    font-size: 1.2rem;
+  }
+  .circle .timer{
+    font-size: 10px;
+  }
+  .ori-slider-text h4{
+    font-size: 0.8rem;
+  }
+  .about-pt{
+    margin-bottom: 24px !important;
+  }
+  .ori-footer-section .ori-footer-widget-wrapper{
+    padding-top: 24px;
+    justify-content: center !important;
+  }
+  .ori-footer-widget .logo-widget img{
+    height: 30px !important;
+  }
   .ori-header-section.landing-header {
     position: relative;
   }
@@ -10740,11 +10796,6 @@ Font load
   border-top: 1px solid #262528;
 }
 
-.ori-footer-title {
-  border-radius: 20px;
-  padding: 35px 0px 25px;
-  border: 1px solid #292929;
-}
 .ori-footer-title h2 {
   color: #fff;
   font-size: 90px;
@@ -10763,7 +10814,7 @@ Font load
 }
 
 .ori-footer-widget-wrapper {
-  padding: 80px 0px;
+  padding-bottom: 80px;
 }
 
 .ori-footer-widget .widget-title {
@@ -10802,7 +10853,7 @@ Font load
 
 .ori-footer-copyright {
   padding: 25px 0px;
-  border-top: 1px solid #292929;
+  border-top: 1px solid #FFFFFF0D;
 }
 .ori-footer-copyright .ori-copyright-text {
   font-size: 14px;
@@ -11414,9 +11465,6 @@ Font load
     position: static !important;
   }
 
-  .ori-footer-widget {
-    margin-bottom: 40px;
-  }
 
   .ori-footer-widget .widget-title {
     padding-bottom: 20px;
@@ -12283,7 +12331,7 @@ Font load
   }
 
   .ori-footer-section {
-    padding-top: 60px;
+    padding-top: 80px !important;
   }
 
   .ori-footer-widget-wrapper {
@@ -13527,6 +13575,17 @@ Font load
   }
 }
 @media screen and (max-width: 680px) {
+  .ori-header-content-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ori-footer-widget-wrapper{
+    flex-wrap: wrap;
+    gap: 16px;
+
+  }
+
   .ori-agency-portfolio-slider .slick-dots {
     width: 70%;
   }
