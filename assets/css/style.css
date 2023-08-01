@@ -370,7 +370,7 @@ select:visited {
   height: 100%;
   position: relative;
   display: inline-block;
-  border-right: 1px solid #1C1C1C;
+  border-right: 1px solid #FFFFFF05;
 }
 .line_animation .line_area:before {
   width: 1px;
@@ -937,12 +937,11 @@ select:visited {
 }
 
 .ori-main-navigation li {
-  margin: 0px 25px;
+  margin-left: 25px;
 }
 .ori-main-navigation li a {
   color: #fff;
   font-size: 14px;
-  padding-bottom: 40px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -10561,9 +10560,6 @@ Font load
 /*---------------------------------------------------- */
 /*Footer area*/
 /*----------------------------------------------------*/
-.ori-footer-section {
-  background-color: #2B0707;
-}
 .ori-footer-section.footer-style-two {
   padding-top: 120px;
   background-color: #171717;
