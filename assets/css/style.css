@@ -182,6 +182,9 @@ body .container {
   background-color: #480000;
   z-index: 1000;
 }
+#preloader img{
+  width: 200px;
+}
 a {
   color: inherit;
   text-decoration: none;
