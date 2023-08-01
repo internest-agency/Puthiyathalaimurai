@@ -150,7 +150,9 @@ body .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
 .timer{
   margin: 0;
   font-size: 1rem;
@@ -1545,8 +1547,10 @@ select:visited {
   margin-bottom: 1.5rem;
 }
 .ori-slider-img img{
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
+
 .ori-digital-studio h1,
 .ori-digital-studio h2,
 .ori-digital-studio h3,
@@ -1698,7 +1702,7 @@ select:visited {
   right: 0;
   z-index: 1;
   color: #fff;
-  bottom: -50px;
+  bottom: 24px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1728,7 +1732,7 @@ select:visited {
 }
 .ori-slider-section-1 .ori-slider-scroll .scroll-mouse i {
   font-size: 30px;
-  color: var(--base-color-1);
+  color: #E08100;
 }
 
 .ori-slider-content-wrapper-1 {
@@ -1984,7 +1988,13 @@ select:visited {
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 0.14em;
-  color: var(--base-color-1);
+}
+
+.ori-sponsor-title h3, .ori-inner-section-title .sub-title, .ori-event-title, .ori-footer-title h2{
+  color: #FACA43 !important;
+}
+.ori-event-title span, .about-pt h2 span{
+  -webkit-text-stroke-color: #FACA43 !important;
 }
 .ori-sponsor-title h3 span {
   margin: 0px 20px;
@@ -2203,7 +2213,7 @@ select:visited {
 .ori-text-scroll-content .ori-text-scroll-icon {
   font-size: 75px;
   margin: 0px 25px;
-  color: var(--base-color-1);
+  color: #E08100;
 }
 
 /*---------------------------------------------------- */
