@@ -136,7 +136,31 @@ body .container {
   display: block;
   list-style: none;
 }
+.countdown{
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.circle{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 10px solid #FF7425;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer{
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+}
+.timer span{
+  font-size: 3rem;
+}
 #preloader {
   position: fixed;
   left: 0;
@@ -623,7 +647,7 @@ select:visited {
           animation-fill-mode: both;
   -webkit-animation-name: slideInDown;
           animation-name: slideInDown;
-  background-color: #171717;
+  background-color: #1E0905;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-transition: 0.3s all ease-in-out;
@@ -1509,7 +1533,7 @@ select:visited {
 .ori-digital-studio,
 .ori-inner-page {
   color: #fff;
-  background-color: #0d0d0d;
+  background-color: #2B0707;
 }
 .ori-digital-studio h1,
 .ori-digital-studio h2,
@@ -1730,8 +1754,8 @@ select:visited {
   height: 530px;
   margin: 0 auto;
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(79.32%, rgba(9, 9, 9, 0)), color-stop(99.06%, #0D0D0D));
-  background: linear-gradient(180deg, rgba(9, 9, 9, 0) 79.32%, #0D0D0D 99.06%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(79.32%, rgba(9, 9, 9, 0)), color-stop(99.06%, #2B0707));
+  background: linear-gradient(180deg, rgba(9, 9, 9, 0) 79.32%, #2B0707 99.06%);
 }
 .ori-slider-content-1.slick-current.slick-active .ori-slider-img {
   opacity: 1;
@@ -6575,7 +6599,7 @@ select:visited {
 }
 
 .ori-about-circle-progress-section{
-  padding-top: 150px;
+  padding: 160px 0 80px 0;
 }
 h2.ori-event-title{
   font-size: 50px;
@@ -10538,7 +10562,7 @@ Font load
 /*Footer area*/
 /*----------------------------------------------------*/
 .ori-footer-section {
-  background-color: #171717;
+  background-color: #2B0707;
 }
 .ori-footer-section.footer-style-two {
   padding-top: 120px;
