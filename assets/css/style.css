@@ -10591,10 +10591,10 @@ Font load
 }
 @media screen and (max-width: 480px) {
   .mfp-gallery.mfp-with-zoom.mfp-img-mobile{
-    position: fixed;
-    top: 50%;
-    height: 100vh;
-    transform: translateY(-50%);
+    position: fixed !important;
+    top: 50% !important;
+    height: 100vh !important;
+    transform: translateY(-50%) !important;
   }
   footer.ori-sponsor-section-1{
     padding-bottom: 0 !important;
