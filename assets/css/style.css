@@ -10590,11 +10590,6 @@ Font load
   }
 }
 @media screen and (max-width: 480px) {
-  .mfp-with-zoom.mfp-img-mobile{
-    position: fixed !important;
-    height: 100vh;
-    z-index: 1000;
-  }
   footer.ori-sponsor-section-1{
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
