@@ -1744,17 +1744,13 @@ section.ori-slider-section-1{
 .ori-slider-section-1 .ori-slider-scroll .scroll-mouse {
   position: relative;
 }
-.ori-slider-section-1 .ori-slider-scroll .scroll-mouse:after {
+.ori-slider-section-1 .ori-slider-scroll .scroll-mouse {
   left: 0;
   right: 0;
-  width: 5px;
-  height: 5px;
   content: "";
   bottom: -8px;
   margin: auto;
-  border-radius: 100%;
   position: absolute;
-  background-color: var(--base-color-1);
   -webkit-animation: MoveUpDown 3s linear infinite;
           animation: MoveUpDown 3s linear infinite;
 }
