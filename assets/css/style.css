@@ -10590,6 +10590,9 @@ Font load
   }
 }
 @media screen and (max-width: 480px) {
+  .mfp-container{
+    position: fixed;
+  }
   .brand-logo img{
     height: 56px;
   }
