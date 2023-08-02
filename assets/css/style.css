@@ -10590,6 +10590,10 @@ Font load
   }
 }
 @media screen and (max-width: 480px) {
+  .mfp-bg.mfp-with-zoom.mfp-img-mobile{
+    bottom: 0;
+    right: 0;
+  }
   .mfp-gallery.mfp-with-zoom.mfp-img-mobile{
     position: fixed !important;
     top: 50% !important;
