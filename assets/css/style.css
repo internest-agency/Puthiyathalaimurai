@@ -281,6 +281,9 @@ select:visited {
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
+.ori-sponsor-content-3{
+  padding-bottom: 80px;
+}
 
 .cursor {
   border-radius: 50%;
@@ -10529,7 +10532,10 @@ Font load
 .ori-impre-feature-item .inner-text h3 {
     font-size: 20PX;
   }
-
+  .ori-sponsor-content-3{
+    padding-bottom: 40px;
+  }
+  
   .ori-theme-feature-item {
     margin-bottom: 40px;
   }
@@ -12139,7 +12145,7 @@ Font load
   }
 
   .ori-slider-content-1 {
-    padding: 170px 0px 150px;
+    padding: 100px 0px 100px;
   }
 
   .ori-project-item-4 {
