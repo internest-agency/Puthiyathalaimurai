@@ -375,6 +375,9 @@ select:visited {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+.content-mobile{
+  display: none;
+}
 .line_animation .line_area {
   width: 12.5%;
   height: 100%;
@@ -1982,7 +1985,7 @@ section.ori-slider-section-1{
 .ori-sponsor-section-1 {
   z-index: 1;
   overflow: hidden;
-  padding: 80px 0;
+  padding-top: 80px;
 }
 .ori-sponsor-section-1 .line_animation .line_area:before {
   display: none;
@@ -10512,6 +10515,12 @@ Font load
   }
 }
 @media screen and (max-width: 991px) {
+  .content-desktop{
+    display: none;
+  }
+  .content-mobile{
+    display: block;
+  }
   .ori-header-section.landing-header .ori-main-navigation {
     display: none;
   }
