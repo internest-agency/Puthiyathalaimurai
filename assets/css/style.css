@@ -277,7 +277,17 @@ select:visited {
 .scrollup i {
   color: #fff;
 }
-
+.zoom-gallery{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 26px;
+}
+.zoom-gallery li img{
+  width: 100%;
+}
+.line_animation.gallery-section{
+  z-index: -1;
+}
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
@@ -10525,7 +10535,14 @@ Font load
   .ori-header-section.landing-header .ori-main-navigation {
     display: none;
   }
-
+  .zoom-gallery{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 26px;
+  }
+  .gallery-item img{
+    border-radius: 8px;
+  }
   .ori-theme-feature-item .inner-text h3,
 .ori-impre-feature-item .inner-text h3 {
     font-size: 20PX;
