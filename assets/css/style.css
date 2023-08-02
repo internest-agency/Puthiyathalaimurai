@@ -10591,7 +10591,7 @@ Font load
 }
 @media screen and (max-width: 480px) {
   .mfp-with-zoom.mfp-img-mobile{
-    position: fixed;
+    position: fixed !important;
   }
   footer.ori-sponsor-section-1{
     padding-bottom: 0 !important;
