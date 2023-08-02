@@ -10590,6 +10590,12 @@ Font load
   }
 }
 @media screen and (max-width: 480px) {
+  .mfp-gallery.mfp-with-zoom.mfp-img-mobile{
+    position: fixed;
+    top: 50%;
+    height: 100vh;
+    transform: translateY(-50%);
+  }
   footer.ori-sponsor-section-1{
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
