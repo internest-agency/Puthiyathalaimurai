@@ -12207,6 +12207,9 @@ Font load
   .ori-footer-section .ori-footer-title h2{
     font-size: 2rem;
   }
+  .ori-footer-title img{
+    height: 3rem;
+  }
   .ori-slider-text .slider-play-btn {
     margin-top: 40px;
   }
@@ -13627,7 +13630,9 @@ Font load
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-
+  .ori-footer-title img{
+    height: 2rem;
+  }
   .ori-header-section.agency-header.sticky-on {
     padding: 0;
   }
