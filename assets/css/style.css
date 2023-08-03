@@ -10549,6 +10549,14 @@ Font load
   }
 }
 @media screen and (max-width: 991px) {
+  .ori-header-section .brand-logo{
+    position: static !important;
+    margin: 0 !important;
+    transform: translateY(0) !important;
+  }
+  .mobile_menu_button{
+    position: static !important;
+  }
   .content-desktop{
     display: none;
   }
@@ -11517,16 +11525,6 @@ Font load
 @media screen and (max-width: 991px) {
   .ori-main-navigation-area {
     display: none;
-  }
-
-  .ori-header-section .brand-logo {
-    left: 0;
-    top: 50%;
-    right: 0;
-    margin: 0 auto;
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
   }
 
   .ori-header-section .ori-header-content {
