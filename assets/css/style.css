@@ -165,15 +165,12 @@ body .container {
   font-size: 3rem;
 }
 .brand-logo img{
-  height: 72px;
+  height: 100px;
 }
 .ori-header-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.ori-sponsor-content img{
-  height: 87px;
 }
 .about-pt p{
   text-align: center;
@@ -294,7 +291,9 @@ select:visited {
 .ori-sponsor-content-3{
   padding-bottom: 80px;
 }
-
+.ori-header-section.sticky-on .brand-logo img{
+  height: 82px;
+}
 .cursor {
   border-radius: 50%;
   display: block;
@@ -377,6 +376,7 @@ select:visited {
   text-align: center;
   border-radius: 8px;
 }
+
 .line_animation {
   top: 0px;
   left: 50%;
@@ -767,6 +767,11 @@ select:visited {
   top: 0;
   opacity: 1 !important;
 }
+.ori-main-navigation .navbar-nav li a{
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .ori-main-navigation-area .dropdown-menu a {
   width: 100%;
   display: block;
@@ -962,7 +967,7 @@ select:visited {
 }
 
 .ori-main-navigation li {
-  margin-left: 25px;
+  margin-left: 32px;
 }
 .ori-main-navigation li a {
   color: #fff;
@@ -1148,17 +1153,31 @@ select:visited {
 }
 
 .ori-footer-section{
-  padding-top: 80px;
+  padding: 80px 0;
 }
 
 .ori-footer-section .ori-footer-title{
   margin-bottom: 32px;
 }
-.about-pt{
-  margin-bottom: 56px;
-}
+
 .ori-footer-section .ori-footer-title h2{
   font-size: 3rem;
+}
+
+.ori-footer-section .ori-footer-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.sponser-scroll-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.sponser-scroll-images img{
+  height: 86px;
 }
 /*// off canvas style*/
 /*----------------------------------------------------*/
@@ -6652,7 +6671,7 @@ section.ori-slider-section-1{
   color: var(--base-color-1);
 }
 .ori-event-content{
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 .ori-about-circle-progress-section {
   overflow: hidden;
@@ -7081,7 +7100,6 @@ h2.ori-event-title{
 .ori-service-details-widget .company-profile-widget a:last-child {
   margin-bottom: 0;
 }
-
 /*---------------------------------------------------- */
 /*Mission Page Area*/
 /*----------------------------------------------------*/
@@ -10380,7 +10398,13 @@ Font load
   margin-left: 12px;
   color: var(--base-color-1);
 }
-
+.ori-event-content{
+  margin-bottom: 56px;
+  text-align: center;
+}
+.ori-sponsor-content{
+  margin-bottom: 3rem;
+}
 /*---------------------------------------------------- */
 /*Responsive area*/
 /*----------------------------------------------------*/
@@ -10537,11 +10561,11 @@ Font load
   }
   .zoom-gallery{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     gap: 26px;
   }
   .gallery-item img{
-    border-radius: 8px;
+    border-radius: 6px;
   }
   .ori-theme-feature-item .inner-text h3,
 .ori-impre-feature-item .inner-text h3 {
@@ -10594,6 +10618,14 @@ Font load
     bottom: 0;
     right: 0;
   }
+  .ori-inner-section-title{
+    text-align: center;
+  }
+  .zoom-gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+  }
   .mfp-gallery.mfp-with-zoom.mfp-img-mobile{
     position: fixed !important;
     top: 50% !important;
@@ -10605,7 +10637,7 @@ Font load
     margin-bottom: 0 !important;
   }
   .brand-logo img{
-    height: 56px;
+    height: 100px;
   }
   .brand-logo{
     position: static !important;
@@ -10884,7 +10916,7 @@ Font load
 }
 
 .ori-footer-widget-wrapper {
-  padding-bottom: 80px;
+  padding-bottom: 56px;
 }
 
 .ori-footer-widget .widget-title {
@@ -10922,9 +10954,17 @@ Font load
 }
 
 .ori-footer-copyright {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
   padding: 25px 0px;
   border-top: 1px solid #FFFFFF0D;
 }
+.ori-footer-copyright a{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .ori-footer-copyright .ori-copyright-text {
   font-size: 14px;
 }
@@ -10994,6 +11034,12 @@ Font load
   color: var(--base-color-1);
 }
 
+.ori-footer-widget-wrapper{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+
+}
+
 /*---------------------------------------------------- */
 /*Responsive area*/
 /*----------------------------------------------------*/
@@ -11004,7 +11050,7 @@ Font load
 }
 @media screen and (max-width: 1600px) {
   .ori-header-section {
-    padding: 30px 50px;
+    padding: 16px;
   }
 
   .ori-slider-section-1 .ori-slider-social {
@@ -11923,10 +11969,12 @@ Font load
     padding-left: 0;
     padding-top: 50px;
   }
+
 }
 @media screen and (max-width: 850px) {
   h2.ori-event-title{
     font-size: 28px;
+    text-align: center;
   }
   .ori-testimonial-content-1 .carousel_nav {
     display: -webkit-box;
@@ -11987,10 +12035,6 @@ Font load
 
   .ori-agency-portfolio-item .ori-agency-portfolio-title p {
     padding-bottom: 15px;
-  }
-
-  .ori-sponsor-content img{
-    height: 65px;
   }
 
   .ori-blog-item-2 {
@@ -13702,6 +13746,14 @@ Font load
   .ori-agency-about-counter {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .ori-footer-copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    padding: 8px 0;
   }
 }
 @media screen and (max-width: 480px) {
