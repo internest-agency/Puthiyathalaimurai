@@ -11038,7 +11038,9 @@ Font load
   grid-template-columns: auto auto auto auto auto;
 
 }
-
+.ori-footer-title img{
+  height: 3rem;
+}
 /*---------------------------------------------------- */
 /*Responsive area*/
 /*----------------------------------------------------*/
