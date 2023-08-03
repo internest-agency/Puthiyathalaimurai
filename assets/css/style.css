@@ -10404,6 +10404,26 @@ Font load
 .ori-sponsor-content{
   margin-bottom: 3rem;
 }
+.sponser-item{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+.sponser-item h6{
+  text-align: center;
+}
+.ori-header-section .brand-logo img{
+  height: 130px;
+}
+.ori-header-section .ori-header-content{
+  align-items: flex-start;
+}
+.ori-header-section .ori-main-navigation-area{
+  margin-top: 32px;
+}
+.ori-header-section.sticky-on .brand-logo img{
+  height: 100px;
+}
 /*---------------------------------------------------- */
 /*Responsive area*/
 /*----------------------------------------------------*/
@@ -10960,18 +10980,9 @@ Font load
   background-color: transparent;
 }
 .ori-footer-copyright {
-  display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
+  text-align: center;
   padding: 25px 0px;
   border-top: 1px solid #FFFFFF0D;
-}
-.ori-footer-copyright a{
-  display: flex;
-  align-items: center;
-  gap: 16px;
 }
 
 .ori-footer-copyright .ori-copyright-text {
@@ -11049,7 +11060,7 @@ Font load
 
 }
 .ori-footer-title img{
-  height: 3rem;
+  height: 5rem;
 }
 /*---------------------------------------------------- */
 /*Responsive area*/
@@ -13643,7 +13654,7 @@ Font load
             transform: translateY(0);
   }
   .ori-footer-title img{
-    height: 2rem;
+    height: 5rem;
   }
   .ori-header-section.agency-header.sticky-on {
     padding: 0;
@@ -13744,7 +13755,18 @@ Font load
   }
 }
 @media screen and (max-width: 680px) {
- 
+  .ori-header-section .brand-logo img{
+    height: 100px;
+  }
+  .ori-header-section .ori-header-content{
+    align-items: flex-start;
+  }
+  .ori-header-section .ori-main-navigation-area{
+    margin-top: unset;
+  }
+  .ori-footer-title img{
+    height: 3rem;
+  }
   .ori-footer-widget-wrapper{
     flex-wrap: wrap;
     gap: 16px;
@@ -13759,11 +13781,9 @@ Font load
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+ 
   .ori-footer-copyright{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    text-align: center;
     margin-top: 24px;
     padding: 8px 0;
   }
