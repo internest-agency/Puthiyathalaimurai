@@ -13624,6 +13624,10 @@ Font load
   }
 }
 @media screen and (max-width: 991px) {
+  .ori-gallery h2 {
+    max-width: 600px;
+    margin: 0 auto;
+  }
   .ori-header-section.agency-header .brand-logo {
     margin: 0;
     position: static;
