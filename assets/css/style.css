@@ -10951,10 +10951,12 @@ Font load
   text-transform: uppercase;
   background-color: transparent;
 }
-
 .ori-footer-copyright {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
   padding: 25px 0px;
   border-top: 1px solid #FFFFFF0D;
 }
@@ -13626,6 +13628,11 @@ Font load
   }
 }
 @media screen and (max-width: 991px) {
+   .ori-header-content-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .ori-gallery h2 {
     max-width: 600px;
     margin: 0 auto;
@@ -13738,11 +13745,7 @@ Font load
   }
 }
 @media screen and (max-width: 680px) {
-  .ori-header-content-area {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+ 
   .ori-footer-widget-wrapper{
     flex-wrap: wrap;
     gap: 16px;
