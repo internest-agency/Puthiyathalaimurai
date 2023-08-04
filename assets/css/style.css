@@ -1170,14 +1170,8 @@ select:visited {
   justify-content: center;
   gap: 12px;
 }
-.sponser-scroll-images{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-}
-.sponser-scroll-images img{
-  height: 86px;
+.sponsor-item-container{
+  margin-right: 16px;
 }
 /*// off canvas style*/
 /*----------------------------------------------------*/
@@ -10404,12 +10398,12 @@ Font load
 .ori-sponsor-content{
   margin-bottom: 3rem;
 }
-.sponser-item{
+.sponsor-item{
   display: flex;
   flex-direction: column-reverse;
   gap: 1rem;
 }
-.sponser-item h6{
+.sponsor-item h6{
   text-align: center;
 }
 .ori-header-section .brand-logo img{
