@@ -10974,9 +10974,18 @@ Font load
   background-color: transparent;
 }
 .ori-footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   text-align: center;
   padding: 25px 0px;
   border-top: 1px solid #FFFFFF0D;
+}
+.ori-footer-copyright.social-icons a{
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .ori-footer-copyright .ori-copyright-text {
