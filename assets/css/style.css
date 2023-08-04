@@ -10406,6 +10406,9 @@ Font load
 .sponsor-item h6{
   text-align: center;
 }
+.sponsor-item img{
+  height: 86px;
+}
 .ori-header-section .brand-logo img{
   height: 130px;
 }
