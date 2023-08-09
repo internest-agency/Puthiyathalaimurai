@@ -594,7 +594,9 @@ select:visited {
   border-radius: 4px;
   background-color: var(--base-color-1);
 }
-
+footer .line_area:not(:first-child) {
+  margin-left: 4px;
+}
 /*---------------------------------------------------- */
 /*Header area*/
 /*----------------------------------------------------*/
