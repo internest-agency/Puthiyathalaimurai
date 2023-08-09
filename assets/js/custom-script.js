@@ -20,3 +20,13 @@ secs.innerText = secondsRemains;
 
 }, 1000);
 
+
+const hideElement = document.querySelector('footer .container .line_animation');
+hideElement.style.display = "none";
+
+const insertElement = '<div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div><div class="line_area"></div>';
+const getFooter = document.querySelector('footer');
+const lineElement = document.createElement('div');
+lineElement.classList.add('line_animation');
+lineElement.innerHTML=insertElement;
+getFooter.appendChild(lineElement);
