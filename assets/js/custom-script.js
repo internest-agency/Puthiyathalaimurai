@@ -3,22 +3,34 @@ const hours = document.querySelector('.hour .timer span');
 const mins = document.querySelector('.min .timer span');
 const secs = document.querySelector('.sec .timer span');
 
-setInterval(()=> {
-  const eventDate = new Date("2023-08-11T18:00:00");
+const eventDate = new Date("2023-08-11T18:00:00");
 const currentDate = new Date();
-const differenceInMilliseconds = eventDate.getTime() - currentDate.getTime();
-const secondsRemains = Math.floor((differenceInMilliseconds % (1000 * 60)) / 1000);
-const minRemains = Math.floor((differenceInMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
-const hoursRemains = Math.floor((differenceInMilliseconds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-const daysRemains = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24));
+if(eventDate-currentDate > 1){
+  setInterval(()=> {
+    const eventDate = new Date("2023-08-11T18:00:00");
+  const currentDate = new Date();
+  const differenceInMilliseconds = eventDate.getTime() - currentDate.getTime();
+  const secondsRemains = Math.floor((differenceInMilliseconds % (1000 * 60)) / 1000);
+  const minRemains = Math.floor((differenceInMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
+  const hoursRemains = Math.floor((differenceInMilliseconds % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const daysRemains = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24));
+  
+  days.innerText = daysRemains;
+  hours.innerText = hoursRemains;
+  mins.innerText = minRemains;
+  secs.innerText = secondsRemains;
+  
+  
+  }, 1000);
+}else{
+  days.innerText = 0;
+  hours.innerText = 0;
+  mins.innerText = 0;
+  secs.innerText = 0;
+}
 
-days.innerText = daysRemains;
-hours.innerText = hoursRemains;
-mins.innerText = minRemains;
-secs.innerText = secondsRemains;
 
 
-}, 1000);
 
 
 const hideElement = document.querySelector('footer .container .line_animation');
