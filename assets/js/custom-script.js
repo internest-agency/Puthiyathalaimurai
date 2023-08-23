@@ -3,11 +3,11 @@ const hours = document.querySelector('.hour .timer span');
 const mins = document.querySelector('.min .timer span');
 const secs = document.querySelector('.sec .timer span');
 
-const eventDate = new Date("2023-08-11T18:00:00");
+const eventDate = new Date("2023-08-24T18:00:00");
 const currentDate = new Date();
 if(eventDate-currentDate > 1){
   setInterval(()=> {
-    const eventDate = new Date("2023-08-11T18:00:00");
+    const eventDate = new Date("2023-08-24T18:00:00");
   const currentDate = new Date();
   const differenceInMilliseconds = eventDate.getTime() - currentDate.getTime();
   const secondsRemains = Math.floor((differenceInMilliseconds % (1000 * 60)) / 1000);
