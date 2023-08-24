@@ -1581,6 +1581,7 @@ footer .line_area:not(:first-child) {
 .youtube-video{
   width: 100%;
   height: 720px;
+  border-radius: 1rem;
 }
 
 /*---------------------------------------------------- */
